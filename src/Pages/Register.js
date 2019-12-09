@@ -136,7 +136,7 @@ class Register extends Component {
                   fullWidth={true}
                   color="primary"
                 >
-                  Sign In
+                  Sign Up
                 </Button>
               </form>
               <Button color="primary" size="large" variant="text">

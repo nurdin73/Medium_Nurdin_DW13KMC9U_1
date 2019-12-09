@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .App {
   text-align: center;
 }
@@ -16,9 +20,7 @@
   justify-content: end;
   align-items: center;
   list-style: none;
-}
-.listMenu li {
-  
+  height: 50px;
 }
 .listMenu li a {
   text-decoration: none;
@@ -26,15 +28,39 @@
   font-weight: 600;
   color: #282c34;
   transition: 0.3s;
-  padding: 5px 10px;
+  padding: 10px 15px;
 }
 .listMenu li a:hover {
   background-color: #484e5a;
   color: #ffffff;
 }
+.listTag {
+  display: flex;
+  list-style: none;
+}
+.listTag li a {
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-weight: 500;
+  color: rgb(63, 63, 63);
+  transition: 0.3s;
+  padding: 2px 5px;
+  text-transform: uppercase;
+}
+.card-img {
+  height: 60vh;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .MuiTypography-h3 {
+    font-size: 2rem !important;
+  }
+  .card-img {
+    height: 25vh;
   }
 }
 
@@ -48,7 +74,13 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.banner-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background-color: #282c34;
+}
 .App-link {
   color: #61dafb;
 }
